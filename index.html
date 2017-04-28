@@ -4,8 +4,13 @@
 <title>
 Mole's GitHub Site
 </title>
+<input type="text", id="userIn", style="display:none;">
+</input>
 <script type="text/javascript">
-document.write("Loaded Mole's Website.<br>STILL UNDER MUCH, MUCH CONSTRUCTION<br>Type \"help\" for a list of commands. (still need to figure out inputs lol)</div>")
+document.write("Loaded Mole's Website.<br>STILL UNDER MUCH, MUCH CONSTRUCTION<br>Type \"help\" for a list of commands. (still need to figure out inputs lol)<br></div>");
+document.addEventListener("keydown", function(event){
+	document.body.appendChild(document.createTextNode(String.fromCharCode(event.keyCode)));
+});
 </script>
 </body>
 </html>
