@@ -2,11 +2,14 @@
 <html lang="en-US">
 <body style="background-color:#000000;font-family:courier;color:#FFFFFF;"id="main">
 <title>
-Days since last jigglypuff buff
+Days Since Last Puff Buff
 </title>
-<script type="text/javascript">
+<script>
 var day = new Date();
-document.write("It has been "+(d.getTime())+" days since Jigglypuff has been buffed");
+document.open();
+var t = Math.floor(day.getTime()/8640000)-175451;
+document.write("It has been "+t+" days since Jigglypuff has been buffed");
+document.close();
 </script>
 </body>
 </html>
