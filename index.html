@@ -7,8 +7,12 @@ Days Since Last Puff Buff
 <script>
 var day = new Date();
 document.open();
-var t = Math.floor(day.getTime()/8640000)-175451;
-document.write("It has been "+t+" days since Jigglypuff has been buffed");
+var t = Math.floor(day.getTime()/86400000)-16398;
+document.write("It has been "+t+" days since Jigglypuff has been buffed<br>");
+t = Math.floor((day.getTime())/86400000)-14110;
+document.write("It has been "+t+" days since the Heavy got his own update<br>");
+t = Math.floor(day.getTime()/86400000)-15359;
+document.write("It has been "+t+" days since the last episode of <i>Jersy Shore</i> was aired<br>");
 document.close();
 </script>
 </body>
